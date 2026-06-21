@@ -149,7 +149,7 @@ def _setup_env():
 
     _env_ready = True
 
-
+# load cuda: pebble
 def load_cuda(cuda_src, cpp_src, funcs, opt=False, verbose=False):
     """Compile and load an inline CUDA extension.
 
