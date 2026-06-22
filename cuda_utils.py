@@ -150,6 +150,7 @@ def _setup_env():
     _env_ready = True
 
 # load cuda: pebble
+# Load inline CUDA extension with caching and unique module name based on source hash.
 def load_cuda(cuda_src, cpp_src, funcs, opt=False, verbose=False):
     """Compile and load an inline CUDA extension.
 
